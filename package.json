@@ -1,4 +1,5 @@
 {
+  "homepage":"http://MuhammadRukon.github.io/todoList-react",
   "name": "todolist-react",
   "author": "Muhammad Rukon",
   "version": "1.0.0",
@@ -11,10 +12,13 @@
     "react-scripts": "3.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "typescript": "3.3.3"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
